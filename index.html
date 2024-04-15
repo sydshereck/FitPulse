@@ -28,6 +28,58 @@
             line-height: 25px;
         }
 
+        .workouts-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .workouts-container button {
+            width: 100px;
+            height: 100px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-size: cover;
+            background-color: transparent;
+            transition: background-image 0.3s ease;
+        }
+
+        .workouts-container button:hover {
+            background-image: var(--hover-image); 
+            background-color: transparent;
+        }
+
+        .schedule-button {
+            background-image: url('./photo/home/schedule.png');
+            --hover-image: url('./photo/home/schedule-hover.png');
+        }
+
+        .videos-button {
+            background-image: url('./photo/home/videos.png');
+            --hover-image: url('./photo/home/videos-hover.png');
+        }
+
+        .push-button {
+            background-image: url('./photo/home/push.png');
+            --hover-image: url('./photo/home/push-hover.png');
+        }
+
+        .pull-button {
+            background-image: url('./photo/home/pull.png');
+            --hover-image: url('./photo/home/pull-hover.png');
+        }
+
+        .legs-button {
+            background-image: url('./photo/home/legs.png');
+            --hover-image: url('./photo/home/legs-hover.png');
+        }
+
+        .cardio-button {
+            background-image: url('./photo/home/cardio.png');
+            --hover-image: url('./photo/home/cardio-hover.png');
+        }
+        
         /* Media query for screens smaller than 600px */
         @media only screen and (max-width: 600px) {
             h1, h2, p {
@@ -47,6 +99,16 @@
 <body>
     <h1>Welcome to FitPulse</h1>
     <h2>Find Your Perfect Workout</h2>
-    <p>Hey syd</p>
+    <p>What Do You Want To Do Today</p>
+
+    <div class="workouts-container">
+        <button class="schedule-button" onclick="window.location.href='https://www.netflix.com/login'"></button>
+        <button class="videos-button" onclick="window.location.href='https://www.disneyplus.com/'"></button>
+        <button class="push-button" onclick="window.location.href='https://www.apple.com/ca/apple-tv-plus/'"></button>
+        <button class="pull-button" onclick="window.location.href='https://www.hulu.com/'"></button>
+        <button class="legs-button" onclick="window.location.href='https://www.paramountplus.com/ca/'"></button>
+        <button class="cardio-button" onclick="window.location.href='https://www.peacocktv.com/'"></button>
+    </div>
+
 </body>
 </html>
