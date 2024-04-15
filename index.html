@@ -15,30 +15,38 @@
             color: white;
         }
 
-        h1 {
+        h1, h2, p {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
-            line-height: 200px;
         }
 
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            line-height: 200px;
-        }
-
+        /* Common styles for all screen sizes */
         p {
-            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            text-indent: 40px;
             font-size: large;
-            text-align: center;
             line-height: 25px;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media only screen and (max-width: 600px) {
+            h1, h2, p {
+                line-height: 150px;
+            }
+        }
+
+        /* Media query for screens smaller than 400px */
+        @media only screen and (max-width: 400px) {
+            h1, h2, p {
+                line-height: 100px;
+            }
         }
     </style>
 </head>
 
 <body>
-
-    <p style="text-align: left; text-indent: 40px;">What would you like to watch today?</p>
- 
+    <h1>Welcome to FitPulse</h1>
+    <h2>Find Your Perfect Workout</h2>
+    <p>Hey syd</p>
 </body>
 </html>
