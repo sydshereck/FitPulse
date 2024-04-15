@@ -15,16 +15,14 @@
             color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            position: relative;
         }
 
         h1, h2, p {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
+            margin-top: 20px;
+            line-height: 1.2em; 
         }
 
         /* Common styles for all screen sizes */
@@ -35,6 +33,15 @@
             line-height: 25px;
         }
 
+        .header-container {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+        }
+
         .goBack-button {
             width: 80px;
             height: 80px;
@@ -42,9 +49,6 @@
             cursor: pointer;
             background-size: cover;
             background-color: transparent;
-            position: absolute;
-            top: 20px;
-            left: 20px;
         }
 
         .goBack-button {
@@ -60,16 +64,4 @@
 
         /* Media query for screens smaller than 400px */
         @media only screen and (max-width: 400px) {
-            h1, h2, p {
-                line-height: 100px;
-            }
-        }
-    </style>
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <button class="goBack-button" onclick="redirectTo('index.html')"></button>
-    <h1>Your Favourite Workout Videos All in 1 place</h1>
-</body>
-</html>
+            
