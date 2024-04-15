@@ -13,11 +13,16 @@
         body {
             background: repeating-radial-gradient(circle, #bad0ae, #8eb27b, #648b50);
             color: white;
+            margin: 0;
+            padding: 0;
+            position: relative;
         }
 
         h1, h2, p {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
+            margin-top: 20px;
+            line-height: 1.2em; /* Adjust the line-height here */
         }
 
         /* Common styles for all screen sizes */
@@ -28,15 +33,17 @@
             line-height: 25px;
         }
 
-        .goBack-container {
-            text-align: left;
-            margin-top: 10px;
+        .header-container {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
 
-        .goBack-container button {
+        .goBack-button {
             width: 80px;
             height: 80px;
-            margin: 0 20px;
             border: none;
             cursor: pointer;
             background-size: cover;
@@ -65,10 +72,9 @@
 </head>
 
 <body>
-    <div class="goBack-container">
+    <div class="header-container">
         <button class="goBack-button" onclick="redirectTo('index.html')"></button>
     </div>
-    
-    <h1>Welcome To Leg Day</h1>
+    <h1>Leg Day</h1>
 </body>
 </html>
