@@ -28,6 +28,25 @@
             line-height: 25px;
         }
 
+        .goBack-container {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .goBack-container button {
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            border: none;
+            cursor: pointer;
+            background-size: cover;
+            background-color: transparent;
+        }
+
+        .goBack-button {
+            background-image: url('./photo/back.png');
+        }
+
         /* Media query for screens smaller than 600px */
         @media only screen and (max-width: 600px) {
             h1, h2, p {
@@ -46,6 +65,10 @@
 </head>
 
 <body>
+    <div class="goBack-container">
+        <button class="goBack-button" onclick="redirectTo('index.html')"></button>
+    </div>
+    
     <h1>Welcome To Leg Day</h1>
 </body>
 </html>
