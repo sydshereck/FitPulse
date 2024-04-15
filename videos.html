@@ -22,7 +22,7 @@
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             margin-top: 20px;
-            line-height: 1.2; 
+            line-height: 1.2; /* Adjust the line-height here */
         }
 
         /* Common styles for all screen sizes */
@@ -64,4 +64,18 @@
 
         /* Media query for screens smaller than 400px */
         @media only screen and (max-width: 400px) {
-            
+            h1, h2, p {
+                line-height: 100px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <button class="goBack-button" onclick="redirectTo('index.html')"></button>
+    </div>
+    <h1>Your Favourite Workout Videos All in 1 place</h1>
+</body>
+</html>
